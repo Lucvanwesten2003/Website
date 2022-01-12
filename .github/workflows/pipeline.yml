@@ -1,4 +1,4 @@
-name: Deploy to GitHub pages
+name: Deploy
 on:
   push:
     # this is the branch where you develop your site
@@ -14,6 +14,8 @@ jobs:
       run: |
         echo test the checkout action,
         ls -a
+    -name: Try to fail
+      run: exit 1
     
     
   
